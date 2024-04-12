@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+body {
+    background-color: black;
+    color: white;
+}
+.corpo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.conteudo {
+    background-color: brown;
+    max-width: 600px;
+    border: 6px solid rgba(139, 0, 0, 0.589);
+    height: 500px;
+    margin: 40px auto;
+    padding: 10px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+img {
+    padding: 30px;
+    width: 150px;
+}
+img:hover {
+    cursor: pointer;
+}
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+}

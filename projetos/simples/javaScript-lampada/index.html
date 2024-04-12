@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ascenda a lâmpada</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        function mudarLampada(tipo){
+            if (tipo == "lampada-desligada") {
+                document.getElementById("img").src = "img/" + tipo + ".png";
+            }
+            if (tipo == "lampada-ligada") {
+                document.getElementById("img").src = "img/" + tipo + ".png";
+            }
+        }
+    </script>
+</head>
+<body>
+   <main class="corpo">
+    <section class="conteudo">
+        <h1>Ascenda a Lâmpada</h1>
+        <img src="img/lampada-desligada.png" id="img" alt="" onmousemove="mudarLampada('lampada-ligada')" onmouseout="mudarLampada('lampada-desligada')">
+    </section>
+   </main> 
+</body>
+</html>

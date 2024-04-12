@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 10px;
+}
+main {
+    padding: 10px;
+    background-color: rgba(226, 26, 11, 0.719);
+}
+img {
+    padding: 10px;
+    margin-left: 35px;
+    width: 100%;
+}
+nav {
+    background-color: brown;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    border-right: 1px solid;
+    padding: 0 5px 0 5px;
+}
+div {
+    border: 4px solid brown;
+    border-radius: 15px;
+    background-color: white;
+}
+h1 {
+    text-align: left;
+    padding: 10px 0;
+    text-indent: 20px;
+    color: black;
+    text-shadow: 5px 5px 0 rgba(128, 128, 128, 0.164);
+}
+main p {
+    text-align: justify;
+    color: black;
+    padding: 10px 0 10px 0;
+    text-indent: 20px;
+}
+.jogo {
+    margin: 0;
+    padding: 0;
+    border-radius: 10px;
+}
+footer {
+    text-align: center;
+    padding: 10px 0;
+}
+footer p {
+    background-color: brown;
+    color: white;
+}
