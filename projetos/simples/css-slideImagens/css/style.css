@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Dancing+Script:wght@400..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100vh;
+    width: 100vh;
+    background: linear-gradient(72deg, rgb(163, 8, 8) 1%, rgb(104, 1, 82) 99%);
+}
+.container {
+    border: 2px solid white;
+    box-shadow: 3px 5px 5px black;
+    max-width: 1000px;
+    width: 100%;
+    height: 550px;
+    margin: 0 auto;
+    border-radius: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    transform: translate(-50%, -50%);
+}
+.container h1 {
+    opacity: 0;
+    text-shadow: 0 0 5px white;
+    position: absolute;
+    font-family: "Dancing Script", cursive;
+    color: #fff;
+    font-size: 30pt;
+    left: 50%;
+    top: 20px;
+    transition: 1s;
+    transform: translate(-50%);
+}
+.slides {
+    display: flex;
+    width: 500%;
+    height: 100%;
+}
+.slide {
+    width: 20%;
+    height: 100%;
+    transition-property: transform, margin-left, filter;
+    transition-duration: 1s, 2s, 2s;
+    transition-timing-function: ease-out, ease-in, ease-in-out;
+}
+.slide:hover {
+    transform: scale(1.2);
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+input {
+    display: none;
+}
+.navegacao {
+    position: absolute;
+    display: flex;
+    left: 50%;
+    bottom: 10px;
+    transform: translate(-50%);
+}
+.navegacao label {
+    opacity: .6;
+    filter: blur(1px);
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #aaa;
+    margin: 10px;
+    transition: .5s;
+}
+.navegacao label:hover {
+    cursor: pointer;
+    background-color: #fff;
+    opacity: 1;
+}
+#slide01:checked ~ .s1 {
+    margin-left: 0;
+}
+#slide02:checked ~ .s1 {
+    margin-left: -20%;
+}
+#slide03:checked ~ .s1 {
+    margin-left: -40%;
+}
+#slide04:checked ~ .s1 {
+    margin-left: -60%;
+}
+#slide05:checked ~ .s1 {
+    margin-left: -80%;
+}
+
+#slide01:checked ~ .s1 h1 {
+    animation: texto-animado 2.5s 1;
+    opacity: 1;
+}
+#slide02:checked ~ .s2 h1 {
+    animation: texto-animado 2.5s 1;
+    opacity: 1;
+}
+#slide03:checked ~ .s3 h1 {
+    animation: texto-animado 2.5s 1;
+    opacity: 1;
+}
+#slide04:checked ~ .s4 h1 {
+    animation: texto-animado 2.5s 1;
+    opacity: 1;
+}
+#slide05:checked ~ .s5 h1 {
+    animation: texto-animado 2.5s 1;
+    opacity: 1;
+}
+
+#slide01:checked ~ .s2 {
+    filter: blur(5px);
+}
+#slide02:checked ~ .s3 {
+    filter: blur(5px);
+}
+#slide03:checked ~ .s4 {
+    filter: blur(5px);
+}
+#slide04:checked ~ .s5 {
+    filter: blur(5px);
+}
+#slide05:checked ~ .s1 {
+    filter: blur(5px);
+}
+
+@keyframes texto-animado{
+    0%{
+    }
+    40%{
+        letter-spacing: 20px;
+    }
+    100%{
+        letter-spacing: 0;
+    }
+}
