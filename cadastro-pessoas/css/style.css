@@ -1,0 +1,72 @@
+@import url('cores.css');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    height: 100%;
+    width: 100%;
+}
+.pagina {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+.cabecalho {
+    height: 15%;
+    width: 100%;
+
+    position: sticky;
+    top: 0;
+    justify-content: center;
+}
+.cabecalho .menu ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0 10px;
+
+    list-style: none;
+}
+.cabecalho .menu ul a {
+    padding: 5px 15px;
+    text-decoration: none;
+    color: var(--text);
+    text-transform: uppercase;
+    border-radius: 15px;
+
+    transition: .5s ease-in-out;
+}
+.cabecalho .menu ul a:hover {
+    background-color: var(--background);
+    box-shadow: 0 0 10px var(--shadow);;
+    color: var(--white);
+}
+.principal {
+    height: 80%;
+    width: 100%;
+    background-image: url("https://cdn.pixabay.com/photo/2019/03/12/12/47/people-4050698_1280.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.rodape {
+    height: 5%;
+    width: 100%;
+
+    position: fixed;
+    bottom: 0;
+
+    color: var(--text);
+}
+.cabecalho, .rodape {
+    background-color: var(--black);
+    box-shadow: 0 0 25px var(--black);
+
+    display: flex;
+    align-items: center;
+}

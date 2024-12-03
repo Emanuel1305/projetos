@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Clientes</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="principal">
+        <form action="cad_cliente.php" method="POST">
+            <h1>Cadastrar Clientes</h1>
+
+            <table>
+                <tr><td colspan="2"><label for="txtNome">Nome:</label></td></tr>
+                <tr><td colspan="2"><input type="text" name="nome" id="txtNome" maxlength="100" required></td></tr>
+                <tr><td colspan="2"><label for="txtEmail">E-mail:</label></td></tr>
+                <tr><td colspan="2"><input type="email" name="email" id="txtEmail" maxlength="100" required></td></tr>
+                <tr><td><label class="duplo-left" for="txtCidade">Cidade:</label></td><td><label class="duplo-rigth" for="txtEstado">Estado:</label></td></tr>
+                <tr><td><input class="duplo-left" type="text" name="cidade" id="txtCidade" maxlength="50" required></td><td><input class="duplo-rigth" type="text" name="estado" id="txtEstado" maxlength="2" required></td></tr>
+                <tr><td colspan="2"><br></td></tr>
+                <tr><td colspan="2"><input class="cad" type="submit" value="Cadastrar" id="btn"></td></tr>
+                <tr><td colspan="2"><input class="limpar" type="reset" value="Limpar" id="btn"></td></tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

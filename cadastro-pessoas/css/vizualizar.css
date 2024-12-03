@@ -1,0 +1,58 @@
+@import url('cores.css');
+@import url('style.css');
+.principal, .dados {
+    display: flex;
+}
+
+.principal {
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.dados {
+    width: 80%;
+    height: 80%;
+    max-height: 80%;
+    overflow: auto;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px var(--black);
+    backdrop-filter: blur(10px);
+}
+
+table {
+    backdrop-filter: blur(10px);
+    position: relative;
+    width: 100%;
+    border: none;
+}
+
+thead {
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+    box-shadow: 0 0 30px var(--shadow);
+}
+
+table th, table td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid var(--shadow);
+}
+
+table th {
+    background-color: var(--black);
+    color: var(--background_white2); 
+    font-weight: bold;
+}
+
+table tr {
+    position: sticky;
+    top: 0px;
+    background-color: var(--background_white);
+}
+
+table tr:nth-child(even){
+    background-color: var(--background_white2);
+}

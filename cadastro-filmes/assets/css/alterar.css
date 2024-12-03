@@ -1,0 +1,18 @@
+@import url('style.css');
+@import url('cadastrar.css');
+
+img {
+    width: 25%;
+    height: 100px;
+}
+
+.boxPoster {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.campos input[type='file']{
+    width: 60%;
+}

@@ -1,0 +1,72 @@
+@import url('cores.css');
+@import url('style.css');
+
+h1 {
+    text-align: center;
+    font-size: 23pt;
+    color: var(--background_white);
+    text-shadow: 0 0 2px;
+}
+.principal, .box, .form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+table {
+    border-spacing: 10px 5px;
+}
+form {
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 400px;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px var(--black);
+}
+form input {
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid var(--shadow);
+    width: 100%;
+    font-size: 11pt;
+    text-indent: 10px;
+}
+.cad {
+    width: 100%;
+}
+.res {
+    width: 100%;
+}
+label {
+    color: var(--background_white);
+    text-shadow: 0 0 1px;
+    font-size: 11pt;
+}
+hr {
+    margin: 15px 0;
+    border: none;
+}
+.btn {
+    height: 30px;
+    background-size: 600%;
+    background-image: linear-gradient(130deg, var(--black), var(--text_black));
+    border: none;
+    color: var(--white);
+    font-weight: bolder;
+    font-size: 12pt; 
+}
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 30px var(--black);
+    animation: gradientAnimation 3s infinite ease-in-out;
+}
+
+@keyframes gradientAnimation {
+    0%{background-position: 0%, 50%;}
+    50%{background-position: 100%, 50%;}
+    100%{background-position: 0%, 50%;}
+}
